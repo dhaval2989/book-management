@@ -1,11 +1,8 @@
 import { Context } from 'koa';
 import bcrypt from 'bcrypt';
 import { generateToken } from '../middleware/auth';
+import { LoginRequestBody } from '../interfaces/AuthInterfaces';
 
-interface LoginRequestBody {
-    username: string;
-    password: string;
-}
 const userCredentials = {
   username: 'admin',
   passwordHash: bcrypt.hashSync('password', 10),

@@ -2,13 +2,7 @@ import { Context } from 'koa';
 import { books, findBookById } from '../utils/bookData';
 import { Book } from '../models/Book';
 import { v4 as uuidv4 } from 'uuid';
-
-interface BookRequestBody {
-    title: string;
-    author: string;
-    price: number;
-    stock: number;
-}
+import { BookRequestBody } from '../interfaces/BookInterface';
 
 export const getAllBooks = (ctx: Context) => {
   ctx.body = books;

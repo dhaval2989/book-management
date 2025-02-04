@@ -84,7 +84,7 @@ Setup & Installation
 1. Clone the Repository
  
 git clone <YOUR_GITHUB_REPO_URL>
-cd book-management-api
+cd book-management
  
 2. Install Dependencies
  
@@ -123,7 +123,7 @@ API Endpoints
  
 Authentication
  
-POST /login: Log in to get a JWT token.
+POST /login : Log in to get a JWT token.
  
 Body:
  
@@ -141,9 +141,9 @@ Response:
  
 Book Management (JWT Required)
  
-GET /books: Fetch all books.
+GET /books : Fetch all books.
  
-GET /books/:id: Fetch a book by its ID.
+GET /books/id : Fetch a book by its ID.
  
 POST /books: Add a new book.
  
@@ -156,7 +156,7 @@ Body:
   "stock": 6
 }
  
-DELETE /books/:id: Delete a book by its ID.
+DELETE /books/id Delete a book by its ID.
  
  
 Note: Include the JWT token in the Authorization header for all book management routes:
