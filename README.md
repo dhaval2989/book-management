@@ -25,11 +25,6 @@ Table of Contents
 6. API Endpoints
  
  
-7. Troubleshooting
- 
- 
- 
- 
 ---------------------------------------------------------------------------
  
 Project Overview
