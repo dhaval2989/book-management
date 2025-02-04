@@ -3,7 +3,7 @@ import { books, findBookById } from '../utils/bookData';
 import { Book } from '../models/Book';
 import { v4 as uuidv4 } from 'uuid';
 import { BookRequestBody } from '../interfaces/BookInterface';
-
+//Implement CRUD operation for books.
 export const getAllBooks = (ctx: Context) => {
   ctx.body = books;
 };

@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { Context, Next } from 'koa';
 import dotenv from 'dotenv';
-
+// Seures protected routes using JWT authentication.
 dotenv.config();
 
 const SECRET_KEY = process.env.JWT_SECRET || 'default_secret';

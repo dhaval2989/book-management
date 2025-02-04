@@ -2,7 +2,7 @@ import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 import bookRoutes from './routes/bookRoutes';
 import authRoutes from './routes/authRoutes';
-
+// Registers routes and sets up Koa.
 const app = new Koa();
 app.use(bodyParser());
 app.use(authRoutes.routes()).use(authRoutes.allowedMethods());

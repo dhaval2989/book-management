@@ -2,7 +2,7 @@ import { Context } from 'koa';
 import bcrypt from 'bcrypt';
 import { generateToken } from '../middleware/auth';
 import { LoginRequestBody } from '../interfaces/AuthInterfaces';
-
+//Handle Login requests and validate credentials.
 const userCredentials = {
   username: 'admin',
   passwordHash: bcrypt.hashSync('password', 10),
